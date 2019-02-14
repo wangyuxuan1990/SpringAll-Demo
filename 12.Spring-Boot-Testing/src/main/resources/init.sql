@@ -1,0 +1,8 @@
+CREATE TABLE `t_user` (
+  `ID` int(11) NOT NULL AUTO_INCREMENT,
+  `USERNAME` varchar(20) NOT NULL COMMENT '用户名',
+  `PASSWD` varchar(128) NOT NULL COMMENT '密码',
+  `CREATE_TIME` datetime DEFAULT NULL COMMENT '创建时间',
+  `STATUS` char(1) NOT NULL COMMENT '是否有效 1：有效  0：锁定',
+  PRIMARY KEY (`ID`)
+) ENGINE=InnoDB DEFAULT CHARSET=utf8;
