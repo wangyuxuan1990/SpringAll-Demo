@@ -1,3 +1,3 @@
 # Spring-Boot-Actuator
 
-只有http://localhost:8004/actuator/shutdown是POST请求
+只有 http://localhost:8004/actuator/shutdown 是POST请求
