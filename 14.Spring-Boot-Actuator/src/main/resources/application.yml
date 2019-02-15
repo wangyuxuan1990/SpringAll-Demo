@@ -1,0 +1,14 @@
+management:
+  endpoints:
+    web:
+      exposure:
+        include: '*' # * 在yaml 文件属于关键字
+
+  server:
+    port: 8004
+    servlet:
+      context-path: / # 只有在设置了 management.server.port 时才有效
+
+  endpoint:
+    shutdown:
+      enabled: true
