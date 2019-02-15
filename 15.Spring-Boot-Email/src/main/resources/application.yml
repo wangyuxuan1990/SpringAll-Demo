@@ -1,0 +1,16 @@
+spring:
+  mail:
+    host: smtp.qq.com
+    username: 邮箱名
+    password: 这里填邮箱的授权码
+    properties:
+      mail:
+        smtp:
+          auth: true
+          starttls:
+            enable: true
+            required: true
+
+# 注意：默认情况下你是不可以直接访问templates下的资源的,需要在application.properties中进行配置
+resources:
+    static-locations: classpath:/static,classpath:/templates
